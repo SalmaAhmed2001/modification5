@@ -1,0 +1,431 @@
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DINOT";
+  src: url("../fonts/DINOT-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+#myText {
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+body {
+  font-family: "DINOT", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+nav {
+  background-color: #222222 !important;
+}
+
+li>a {
+  color: white !important;
+}
+
+li :hover {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+li.active {
+  background-color: gray;
+  border-radius: 5px;
+}
+
+.bg-image {
+  background-image: url("../img/banner-bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  min-height: 70vh;
+}
+
+.cardest {
+  background-image: url("../img/card.png");
+  background-repeat: no-repeat;
+  
+
+}
+
+/* ------- */
+
+
+/* .navbar-logo {
+  max-width: 100%; /* Ensure the logo stays within the container 
+  height: auto; 
+} */
+
+
+
+/* .navbar-nav .nav-item {
+  overflow: hidden; /* Hide any content that overflows the fixed size 
+} */
+/* 
+.navbar-nav .nav-link {
+  white-space: nowrap; /* Prevent text from wrapping 
+}
+
+/* Override styles for active state 
+.navbar-nav .nav-item.active {
+  overflow: visible; /* Show content when activ
+} */
+
+.Cards {
+  color: #ffcf55 !important;
+  background-color: #333232;
+  border-radius: 5px;
+
+}
+
+/* -------------------------------- */
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffc107;
+  /* Change this to your desired background color */
+  border-radius: 10px;
+  /* Add border-radius for rounded corners */
+}
+
+.icon-container i {
+  color: #000000;
+  font-size: 45px;
+}
+
+/*  */
+.containersection3 {
+  /* margin-top: 50px; */
+  max-width: 100%;
+
+  background-color: #F4F4F4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.Choose {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+h2.display-4 {
+  font-size: 3rem;
+  font-weight: 500;
+
+}
+
+.card {
+  border-radius: 10%;
+}
+
+
+.postGrid {
+  position: relative;
+}
+
+
+.logo {
+  position: absolute;
+  top: 6px;
+  left: 30px;
+}
+
+
+
+
+
+
+.img-container {
+  height: 50vh;
+  /* Set the height to 50% of the viewport height */
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  justify-content: center;
+  /* Center horizontally */
+}
+.padd_left{
+  padding-left: 20px;
+}
+
+.img-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fade-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+.move-from-down-to-up {
+  animation: moveUp 1s ease-in-out;
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Default styling for large screens */
+
+
+
+.cardest {
+  background-image: url("../img/card.png");
+  background-repeat: no-repeat;
+  background-size: contain; /* or contain, depending on your preference */
+  min-height: 200px; /* Set a minimum height to ensure visibility */
+  /* background-position: center; */
+  
+  
+}
+
+/* Media query for smaller screens */
+/* @media (max-width: 984px) {
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order:2;
+  }
+} */
+@media (max-width: 576px) {
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order:2;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order:2;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order:2;
+  }
+}
+
+ /* @media (min-width: 993px) and (max-width: 1200px) {
+  .parent {
+    position: relative;
+  }
+
+  .cardest {
+    flex-direction: row-reverse;
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    bottom: 0; 
+    left: 500px;   
+    width: 100%; 
+  }
+} 
+ */
+
+ /* correct */
+ @media (min-width: 993px) and (max-width: 1200px) {
+  .parent {
+    display: flex; /* Make sure the parent is a flex container */
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  .cardest {
+    
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .parent {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of child elements */
+    position: relative;
+  }
+
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+/* 
+ @media (min-width: 991px) and (max-width: 1200px) {
+  .parent {
+    position: relative;
+    /* flex-direction: row-reverse; 
+  }
+
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    top: 335px; 
+    left: 0;
+    width: 50%;
+  }
+
+  .grid_icons {
+    position: relative;
+    bottom: 0;
+    left: 500px;
+    width: 50%;
+  }
+} 
+ */
+
+
+
+
+/* @media (min-width: 991px) and (max-width: 1200px) {
+  .parent {
+    position: relative;
+  }
+
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    top: 0px; /* Keep the specific vertical position 
+    left: 0;
+    width: 50%;
+  }
+
+  .grid_icons {
+    position: absolute;
+    top: 50px; /* Maintain the top position 
+    left: 500px; /* Maintain the right position 
+    width: 50%;
+  }
+} */
+
+
+
+
+/* @media (min-width: 1201px) and (max-width: 1400px) {
+  .parent {
+    position: relative;
+  }
+
+  .cardest {
+    background-size: contain;
+    min-height: 400px;
+    order: 2;
+    position: absolute;
+    bottom: 0; /* Adjust the positioning based on your needs 
+    left: 500px;   /* Adjust the positioning based on your needs 
+    width: 100%; /* Make sure the width is 100% of the parent 
+  }
+} */
+
+@media (min-width: 1201px) and (max-width: 1400px)
+{
+
+
+.parent {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the order of child elements */
+  position: relative;
+}
+
+.cardest {
+  background-size: contain;
+  min-height: 400px;
+  order: 2;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+}
+
+}
